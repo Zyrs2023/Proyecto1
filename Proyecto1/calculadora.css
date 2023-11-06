@@ -83,6 +83,12 @@ table {
     vertical-align: middle; /* Centra verticalmente el contenido del botón */
     margin-right: 5px; /* Añade un pequeño espacio entre el texto y el botón */
 }
+.button-coma::before {
+    content: ","; /* Símbolo de coma */
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+    vertical-align: middle; /* Centra verticalmente el contenido del botón */
+    margin-right: 5px; /* Añade un pequeño espacio entre el símbolo y el texto del botón */
+}
 
 
     

@@ -37,15 +37,20 @@ namespace Proyecto1
 
         protected void AppendComma(object sender, EventArgs e)
         {
-            txtDisplay.Text += ",";
+            if (!txtDisplay.Text.Contains(","))
+            {
+                txtDisplay.Text += ",";
+            }
         }
 
         protected void CalculateResult(object sender, EventArgs e)
         {
             try
             {
-                var result = new DataTable().Compute(txtDisplay.Text, null);
-                txtDisplay.Text = result.ToString();
+                // Reemplaza la coma por un punto para asegurar que la expresión sea válida en C#
+                string expression = txtDisplay.Text.Replace(",", ".");
+                var result = new DataTable().Compute(expression, null);
+                txtDisplay.Text = result.ToString().Replace(".", ",");
             }
             catch
             {
@@ -56,8 +61,8 @@ namespace Proyecto1
         protected void AppendOperator(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            txtDisplay.Text += " " + "*" + " " ; // Usa "*" para la operación de multiplicación
-           
+            txtDisplay.Text += " " + button.Text + " ";
+
         }
         protected void AppendDivideOperator(object sender, EventArgs e)
         {
@@ -139,10 +144,7 @@ namespace Proyecto1
             }
         }
 
-        protected void Button24_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         protected void CalculateSquare(object sender, EventArgs e)
         {
@@ -204,6 +206,11 @@ namespace Proyecto1
             }
 
             ViewState["BaseValue"] = baseValue;
-        }   
+        }
+        protected void Appendmulti(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            txtDisplay.Text += " " + "*" + " "; // Usa "*" para la operación de multiplicación
+        }
     }
 }

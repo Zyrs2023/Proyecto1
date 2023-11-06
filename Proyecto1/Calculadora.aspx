@@ -55,7 +55,7 @@
                         <asp:Button ID="Button10" CssClass="calculadora boton button4 button3" runat="server" OnClick="AppendNumber" Text="9" />
                     </td>
                     <td class="td">
-                        <asp:Button ID="Button15" CssClass="calculadora boton button2 button-x" runat="server" Text="x"  OnClick="AppendOperator"  />
+                        <asp:Button ID="Button15" CssClass="calculadora boton button2 button-x" runat="server" Text="x"  OnClick="Appendmulti"  />
                     </td>
                 </tr>
                 <tr>
@@ -103,7 +103,7 @@
                         <asp:Button ID="Button1" CssClass="calculadora boton button4 button3" OnClick="AppendNumber" runat="server" Text="0" />
                     </td>
                     <td class="td">
-                        <asp:Button ID="Button11" CssClass="calculadora boton button4 button3" runat="server" Text="," OnClick="AppendComma" />
+                        <asp:Button ID="Button11" CssClass="calculadora boton button4 button3 button-coma" runat="server" Text="," OnClick="AppendComma" />
                     </td>
                     <td class="td">
                         <asp:Button ID="Button12" CssClass="calculadora boton boton11 button1" runat="server" Text="=" OnClick="CalculateResult" ForeColor="White"/>
