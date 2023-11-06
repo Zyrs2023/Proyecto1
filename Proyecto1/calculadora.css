@@ -1,0 +1,91 @@
+﻿.boton {
+    height: 60px;
+    width: 80px;
+    gap: 5px;
+    margin: 1px;
+}
+.boton11 {
+    background-color: midnightblue;
+
+}
+.boton12 {
+    height: 70px; 
+    Width: 462px;
+    text-align: right
+
+}
+table {
+   
+    background-color: #f2f2f2; /* Color gris claro de fondo */
+    
+
+    
+        
+}
+
+
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+.button3:hover 
+    {
+        background-color: #e7e7e7;
+    }
+.button1:hover {
+    background-color: darkblue;
+}
+.button2:hover {
+    background-color: white;
+}
+.table-container {
+    text-align: center; /* Centra horizontalmente */
+}
+
+table {
+    margin: 0 auto; /* Centra horizontalmente */
+}
+.button-x::before {
+    content: "×"; /* Unicode para el símbolo de multiplicación (×) */
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+    vertical-align: middle; /* Centra verticalmente el contenido del botón */
+    margin-right: 5px; /* Añade un pequeño espacio entre el símbolo y el texto del botón */
+}
+.button-÷::before {
+    content: "÷"; /* Unicode para el símbolo de multiplicación (×) */
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+    vertical-align: middle; /* Centra verticalmente el contenido del botón */
+    margin-right: 5px; /* Añade un pequeño espacio entre el símbolo y el texto del botón */
+}
+.button-sqrt::before {
+    content: "²√x"; /* Unicode para el símbolo de raíz cuadrada (√) */
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+    vertical-align: middle; /* Centra verticalmente el contenido del botón */
+    margin-right: 5px; /* Añade un pequeño espacio entre el símbolo y el texto del botón */
+}
+.button-square::before {
+    content: "x²"; /* Unicode para el símbolo de elevado al cuadrado (²) */
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+    vertical-align: middle; /* Centra verticalmente el contenido del botón */
+    margin-right: 5px; /* Añade un pequeño espacio entre el símbolo y el texto del botón */
+}
+.button-10y::before {
+    content: "10y"; /* Texto para representar "10y" */
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+    vertical-align: middle; /* Centra verticalmente el contenido del botón */
+    margin-right: 5px; /* Añade un pequeño espacio entre el texto y el botón */
+}
+.button-exponent::before {
+    content: "xᵞ"; /* Texto para representar "x^y" */
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+    vertical-align: middle; /* Centra verticalmente el contenido del botón */
+    margin-right: 5px; /* Añade un pequeño espacio entre el texto y el botón */
+}
+
+
+    
+
+    
+    
